@@ -1,6 +1,21 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script>
+      $(document).ready(function(){
+        $(window).scroll(function(){
+          if($(this).scrollTop() > 100){
+            $(".adi").css({"opacity" : "0"})
+          }
+          else {
+            $(".adi").css({"opacity" : "1"})
+          }
+        })
+
+      })
+    </script>
+    
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- Required meta tags -->
@@ -99,8 +114,13 @@
   </div>
 </nav>
 </div>
-
-<div style="background: url(https://freshersstreet.github.io/portfolio/backgg.png) no-repeat; background-size: 100% 100%; border-bottom-right-radius: 45% 20%; border-bottom-left-radius: 45% 20%;">  
+<style>
+  .adi{
+    transition: .5s;
+  }
+</style>
+      
+<div class="adi" style="background: url(https://freshersstreet.github.io/portfolio/backgg.png) no-repeat; background-size: 100% 100%; border-bottom-right-radius: 45% 20%; border-bottom-left-radius: 45% 20%;">  
     <br><br><br><br><br><br><br><br><br>
     <div class="featurette-heading" style="text-align: center;color:white; font-size: 42px; font-family: 'Playfair Display';">
       Hi, I'm <span>Aditya Das</span>
